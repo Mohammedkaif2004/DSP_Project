@@ -15,7 +15,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 logging.basicConfig(filename="svm_gpu.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 logging.info("starting svm training")
-
+data_dictionary="1_3/data"
 X, y = make_classification(
     n_samples=10000,
     n_features=64,
