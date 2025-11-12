@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 import logging
 import time
-
+data_dictionary="1_3/data"
 torch.manual_seed(13)
 np.random.seed(13)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
